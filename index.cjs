@@ -1,7 +1,7 @@
 const ethers = require('ethers');
 const Web3 = require("web3");
 const minSweep = '0.005';
-const compromisedPrivkey = '3ff61cb8f6370f010475abdd3776da2c13c1053e9948a5422cf7506dd5944bf2';
+const compromisedPrivkey = 'Your Compromised Privkey';
 
 function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));  }
 
@@ -9,7 +9,7 @@ function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms));  }
 
 async function main() {
 	const web3 = new Web3('https://bsc-dataseed.binance.org/');
-	const compromisedPubkey  = web3.utils.toChecksumAddress('0x947a1eA3a5B18A5065fd9d55663505806eaa9DDC');
+	const compromisedPubkey  = web3.utils.toChecksumAddress('Your Compromised Pubkey');
 	const destinationPubkey = web3.utils.toChecksumAddress('Your Destination Address');
 	const gasGwei = await web3.utils.toWei('30', 'gwei');
 	const ethMin = await web3.utils.toWei("0.004", 'ether');
