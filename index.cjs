@@ -33,7 +33,7 @@ async function main() {
 	      let amntSent = await web3.utils.fromWei(String(trnsAmnt), 'ether');
 	      done++;
 		  console.log("...recovered something");
-	      await sleep(60000); // Transaction sent, take a rest :D
+	      await sleep(60000); 
 	    } catch (e) {
 	    	console.log(e);
 	    	errors++;
