@@ -6,7 +6,7 @@ If your Eth (or any EVM chain) wallet's been compromised, run this it to potenti
 3. plug in whatever EVM rpc provider
 4. enjoy
 
-
+*You may need to rename index.cjs to index.js. ".cjs" simply means common javascript, in my case the way my TSconfig was setup require a .cjs extension
 
 If your wallet is currently being held hostage by a sweeper and:
 
